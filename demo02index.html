@@ -108,7 +108,7 @@
         template: `
           <div class="acpt">
           <h2>## 实现双向数据绑定:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp按回车出现提醒你，按shift+command内容清空</h2>
-          <input type="text" v-model.lazy.trim="message" placeholder="内容双向绑定" @keydown.enter="submit_show_alert"
+          <input type="text" v-model.trim="message" placeholder="内容双向绑定" @keydown.enter="submit_show_alert"
                  @keydown.meta.shift="clearspace">
           <div>{{ message }}</div>
           </div>
