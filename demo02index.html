@@ -232,12 +232,11 @@
                 // this.answer = "Thinking……"
                 axios.get('https://silvio27.github.io/demo01/' + linkitem)
                     .then(response => {
-                        console.log(response)
-                        this.localback = response.data
                         console.log(response.data)
+                        this.localback = response.data
                     })
                     .catch(error => {
-                        this.localback = 'ABC'
+                        this.localback = 'Error'
                         // alert(this.localback)
                     })
             },
